@@ -7,34 +7,41 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
     <title>Stopwatch</title>
 </head>
-<body>
-    <div id="cronometro">
-        <div id="legenda">
-            <h1>Teste sua agilidade</h1>
-            <p>Clique no botão "iniciar" e depois no "parar" e veja o seu tempo de resposta!</p>
-        </div>
-
-        <div id="marcador"><h2 id="timer">00:00:00:00</h2></div>
-
-        <div id="actions">
+<body class="container">
+    <header>HEADER</header>
+    <main>
+        <div id="cronometro">
+            <div id="legenda">
+                <h1>Teste sua agilidade</h1>
+                <p>Clique no botão "iniciar" e depois no "parar" quando o cronometro atingir 5 segundos!</p>
+            </div>
+        
+            <div id="marcador">
+                <h2 id="timer">00:00</h2>   
+            </div>
             
-            <button id="go" action="start">
-                <i class="fa-solid fa-play"></i>
-            </button>
-            <button id="parar" action="stop">
-                <i class="fa-solid fa-pause"></i>
-            </button>
+            <div id="actions">       
+                <button id="go" action="start">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button id="parar" action="stop">
+                    <i class="fa-solid fa-pause"></i>
+                </button>            
+            </div>
+            <div id="tempos-marcados"></div>
+            
+            <div id="reset">
+                <button id="resetar" action="reset">
+                    <i class="fa-solid fa-redo"></i> 
+                </button>
+            </div>            
         </div>
-
-        <div id="reset">
-            <button id="resetar" action="reset">
-                <i class="fa-solid fa-redo"></i> 
-            </button>
-        </div>
-    </div>
+    </main>
+    <footer><p>Criado por 1RodrigoTavares1</p> </footer>
     <script src="javascript/script.js"></script>
 </body>
+
 </html>
