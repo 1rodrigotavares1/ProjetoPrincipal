@@ -128,4 +128,12 @@ footer{
     transition: background-color .2s ease-in;
 }
 #reset button:hover {
-    background-color: #04631b91;
+    background-color: #04631b91;}
+
+a {
+    color: #fff;
+}
+
+a:hover{
+    color: red;
+}
